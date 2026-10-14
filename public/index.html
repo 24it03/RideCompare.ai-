@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>RideCompare.ai</title><meta name="description" content="Compare local rides by price, arrival time and route distance."><link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin=""></head>
+<body>
+<div class="app">
+<header><div class="brand"><span class="brandmark">R</span><div><strong>RideCompare.ai</strong></div></div><span class="live"><i></i> Demo mode</span></header>
+<main>
+<section class="hero"><div><p class="eyebrow">ANAND • SMART RIDE COMPARISON</p><h1>Cheapest. Fastest.<br><span>Shortest.</span> One search.</h1><p class="sub">Compare estimated ride options across your Anand route in seconds.</p></div><div class="stats"><b>10</b><small>mapped stops</small></div></section>
+<section class="workspace">
+<div class="panel search-panel"><div class="field"><label>FROM</label><select id="from"></select></div><div class="swap">⇄</div><div class="field"><label>TO</label><select id="to"></select></div><button id="compare">Compare rides <span>→</span></button><div class="quick"><label>QUICK ROUTES</label><div id="quickRoutes"></div></div></div>
+<div class="map-panel"><div class="map" id="map" aria-label="Interactive map of Anand ride route"></div><div class="map-note">📍 Interactive Anand map • OpenStreetMap</div></div>
+</section>
+<section class="results"><div class="section-head"><div><p class="eyebrow">RIDE RESULTS</p><h2>Best options for you</h2></div><div class="preference"><button class="active" data-sort="balanced">⚖ Best</button><button data-sort="price">₹ Cheapest</button><button data-sort="time">⚡ Fastest</button><button data-sort="distance">⌁ Shortest</button></div></div><div id="badges" class="badges"></div><div id="rides" class="rides"></div></section>
+<section class="locations"><div><p class="eyebrow">MAPPED LOCATIONS</p><h2>Your Anand route</h2></div><div id="locationGrid" class="location-grid"></div></section>
+</main><footer><span>RideCompare.ai</span><span>Estimated demo fares • Not live provider quotes</span></footer>
+</div><script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script><script src="app.js"></script></body></html>
